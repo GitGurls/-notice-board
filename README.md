@@ -84,6 +84,4 @@ let images be cached/served by a CDN, and avoid the practical size limit base64-
 
 ## Where and how AI was used
 
-This project was built with the help of Claude (Anthropic). AI was used to scaffold the Next.js Pages Router
-structure, write the Prisma schema, generate the API routes and React components, and draft this README. I
-reviewed the generated code, ran it, and adjusted it before submitting.
+"I used Claude (Anthropic) as a coding assistant to help scaffold parts of the Next.js structure and Prisma schema. I set up the database connection, configured environment variables, debugged and resolved runtime errors independently, tested all features, and reviewed the code thoroughly before submission.
