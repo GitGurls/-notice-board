@@ -1,0 +1,28 @@
+// Prisma schema for the Notice Board
+// Provider is set to "mysql" because the recommended free hosted DB
+// (TiDB Cloud) is MySQL-compatible. To use Neon or Supabase (Postgres)
+// instead, change provider below to "postgresql" — everything else
+// (the model, the queries in pages/api/notices) stays the same.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Notice {
+  id          Int      @id @default(autoincrement())
+  title       String   @db.VarChar(200)
+  body        String
+  category    String   @db.VarChar(20)
+  priority    String   @db.VarChar(10)
+  publishDate DateTime
+  image       String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([priority, publishDate])
+}
