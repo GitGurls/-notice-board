@@ -4,7 +4,7 @@ A campus notice board built for the Reno Platforms web development internship as
 Full create / read / update / delete, with server-side validation and Urgent-first ordering
 done in the database query.
 
-**Live app:** _add your Vercel URL here after deploying_
+**Live app:** _add your Vercel URL here after deploying_.
 **Repo:** _add your GitHub URL here_
 
 ## Stack
